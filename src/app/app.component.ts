@@ -1,7 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
+// Denne komponenten kan kalles RouterComponent
+// fordi denne er festet til en router
+// og viser routed views.
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+    moduleId: module.id,
+    selector: "my-app",
+    templateUrl: "./app.component.html",
+    styleUrls:["app.component.css"]
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent {
+    title = 'Tour of Heroes (app component)';
+}
